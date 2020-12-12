@@ -26,10 +26,13 @@ function Form() {
     if (!input["checked"]) {
       alert("accept the terms and conditions");
     }
-    if (Object.keys(input).length !== demographics.length + medical.length + 1) {
+    else if (Object.keys(input).length !== demographics.length + medical.length + 1) {
       alert("please fill out all the data")
     }
-    console.log(input);
+    else {
+      console.log(input);
+    }
+
   }
 
 
